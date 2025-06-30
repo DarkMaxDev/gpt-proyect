@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #242629;
+  color: #333;
+}
+
+header {
+  background-color:#000000;
+  color: #fff;
+  text-decoration-color: #1d3557;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffb703;
+}
+
+#menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.seccion {
+  padding: 2rem;
+  background-color: #a5a5a5;
+  margin: 1rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {  
+  background-color:rgb(0, 0, 0) ;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background-color: #1d3557;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 150px;
+    border-radius: 4px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+}
+.program-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.program-card {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Anuncion Card  */
+
+.anuncio-card img {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 0.5rem;
+
+}
+.anuncio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.anuncio-card {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+
+
+
+
+.program-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+.precio {
+  font-weight: bold;
+  color: #1d3557;
+  margin: 0.5rem 0;
+}
+
+.btn-comprar {
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #14eccf;
+}
